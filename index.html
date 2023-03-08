@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Cart | eBizMart</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg nav-bg">
+            <div class="container-fluid container">
+                <a class="navbar-brand text-white logo" href="cart.html">e<span class="">Biz</span><span
+                        class="text-danger">Mart</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav-cus">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="cart.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mac</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">iphone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i>
+                                Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container pt-4">
+                <h2 class="pb-3">Carts: (3)</h2>
+                <div class="row">
+                    <div class="col-sm-7 mb-3 mb-sm-0 pb-5">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h4>Total Carts</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- cart 1 -->
+                                    <div class="col-sm-4 mb-2 mb-sm-0 cart-pic">
+                                        <div class="text-center">
+                                            <img src="images/iphone 14 pro max.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-2 mb-sm-0 pt-3">
+                                        <div class="text-black">
+                                            <h5>iphone 14 pro max <span class="badge bg-danger">35% off</span></h5>
+                                            <!-- rating -->
+                                            <p class="fs-6 rat text-black">3.6
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+
+                                                <span class="text-primary">2.3k+</span>
+                                            </p>
+
+                                            <!-- price -->
+                                            <h4>$1099 <span
+                                                    class="fs-6 text-decoration-line-through text-danger">$1325</span>
+                                            </h4>
+                                            <!-- color -->
+                                            <p class="text-black">Color:
+                                                <i class="fa-solid fa-circle text-danger"></i>
+                                                <i class="fa-solid fa-circle text-success"></i>
+                                                <i class="fa-solid fa-circle text-warning"></i>
+                                                <i class="fa-solid fa-circle"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- input -->
+                                    <div class="col-sm-4 mb-2 mb-sm-0 pt-4">
+                                        <div class="text-center pb-2">
+                                            <h5>Quantity</h5>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <!-- minus button -->
+                                            <button class="form-control" id="phone-minus"><i
+                                                    class="fa-solid fa-minus"></i></button>
+                                            <!-- input field -->
+                                            <input type="number" id="phone-quantity" min="0"
+                                                class="form-control text-center" aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-default" value="1">
+                                            <!-- plus button -->
+                                            <button class="form-control" id="phone-plus"><i
+                                                    class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <h4 class="text-center fw-bold">$<span id="phone-price">1099</span></h4>
+                                    </div>
+
+                                    <!-- cart span -->
+                                    <span class="cart-span"></span>
+
+
+
+
+
+
+
+                                    <!-- cart 2 -->
+                                    <div class="col-sm-4 mb-2 mb-sm-0 cart-pic pt-4">
+                                        <div class="text-center">
+                                            <img src="images/headphone.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-2 mb-sm-0 pt-3">
+                                        <div class="text-black">
+                                            <h5>Apple headphone max <span class="badge bg-danger">30% off</span></h5>
+                                            <!-- rating -->
+                                            <p class="fs-6 rat text-black">4.6
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+
+                                                <span class="text-primary">5.3k+</span>
+                                            </p>
+
+                                            <!-- price -->
+                                            <h4>$299 <span
+                                                    class="fs-6 text-decoration-line-through text-danger">$499</span>
+                                            </h4>
+                                            <!-- color -->
+                                            <p class="text-black">Color:
+                                                <i class="fa-solid fa-circle text-danger"></i>
+                                                <i class="fa-solid fa-circle text-success"></i>
+                                                <i class="fa-solid fa-circle text-warning"></i>
+                                                <i class="fa-solid fa-circle"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- input -->
+                                    <div class="col-sm-4 mb-2 mb-sm-0 pt-4">
+                                        <div class="text-center pb-2">
+                                            <h5>Quantity</h5>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <!-- minus button -->
+                                            <button class="form-control" id="headphone-minus"><i
+                                                    class="fa-solid fa-minus"></i></button>
+                                            <!-- input field -->
+                                            <input type="number" id="headphone-quantity" min="0"
+                                                class="form-control text-center" aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-default" value="1">
+                                            <!-- plus button -->
+                                            <button class="form-control" id="headphone-plus"><i
+                                                    class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <h4 class="text-center fw-bold">$ <span id="headphone-price">299</span></h4>
+                                    </div>
+
+                                    <!-- cart span -->
+                                    <span class="cart-span"></span>
+
+                                    <!-- cart 3 -->
+                                    <div class="col-sm-4 mb-2 mb-sm-0 cart-pic pt-4">
+                                        <div class="text-center">
+                                            <img src="images/mac-01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-2 mb-sm-0 pt-3">
+                                        <div class="text-black">
+                                            <h5>Mackbook pro <span class="badge bg-danger">20% off</span></h5>
+                                            <!-- rating -->
+                                            <p class="fs-6 rat text-black">4.5
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+                                                <i class="fa-solid fa-star rating"></i>
+
+                                                <span class="text-primary">3.3k+</span>
+                                            </p>
+
+                                            <!-- price -->
+                                            <h4>$1899 <span
+                                                    class="fs-6 text-decoration-line-through text-danger">$2050</span>
+                                            </h4>
+                                            <!-- color -->
+                                            <p class="text-black">Color:
+                                                <i class="fa-solid fa-circle text-danger"></i>
+                                                <i class="fa-solid fa-circle text-success"></i>
+                                                <i class="fa-solid fa-circle text-warning"></i>
+                                                <i class="fa-solid fa-circle"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- input -->
+                                    <div class="col-sm-4 mb-2 mb-sm-0 pt-4">
+                                        <div class="text-center pb-2">
+                                            <h5>Quantity</h5>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <!-- minus button -->
+                                            <button class="form-control" id="mac-minus"><i
+                                                    class="fa-solid fa-minus"></i></button>
+                                            <!-- input field -->
+                                            <input type="number" id="mac-quantity" min="0"
+                                                class="form-control text-center" aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-default" value="1">
+                                            <!-- plus button -->
+                                            <button class="form-control" id="mac-plus"><i
+                                                    class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <h4 class="text-center fw-bold">$ <span id="mac-price">1899</span></h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- total -->
+                    <div class="col-sm-5 mb-3 mb-sm-0 pb-5">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h4>Cart Summary</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between text-black">
+                                    <h6>Ammount: </h6>
+                                    <p class="fs-6 fw-semibold">$<span id="sub-ammount">2000</span></p>
+                                </div>
+                                <div class="d-flex justify-content-between text-black">
+                                    <h6>Discount: </h6>
+                                    <p class="fs-6 fw-semibold">$<span id="discount-ammount">400</span></p>
+                                </div>
+                                <div class="d-flex justify-content-between text-black">
+                                    <h6>Tax: </h6>
+                                    <p class="fs-6 fw-semibold">$<span id="tax-ammount">350</span></p>
+                                </div>
+                                <span class="total-span"></span>
+                                <div class="d-flex justify-content-between text-black pb-4">
+                                    <h5>Total: </h5>
+                                    <p class="fs-5 fw-bold">$<span id="total-ammount">1900</span></p>
+                                </div>
+                                <span class="total-span"></span>
+                                <div class="text-black pt-2 promo">
+                                    <h6>Apply a promotion code</h6>
+                                    <span class="text-muted">Enter your promo code for <span class="fw-bold">upto
+                                            45%</span> discount</span>
+                                    <form class="d-flex justify-content-center pt-3" role="search">
+                                        <input class="form-control w-50 me-2" type="search"
+                                            placeholder="Enter promo code" aria-label="Search">
+                                        <button class="btn btn-outline-success disabled" type="submit">Apply</button>
+                                    </form>
+                                </div>
+                                <div class="pt-4 text-center pb-2 check">
+                                    <button class="btn btn-outline-dark w-100" id="checkout-now">Checkout Now</button>
+                                    <p class="text-muted pt-2">Buy continuing to be checkout, you agreeing to our <a
+                                            href="#" class="text-decoration-underline text-black">terms
+                                            and
+                                            condition</a> and <a href="#"
+                                            class="text-decoration-underline text-black">privecy
+                                            policy</a></p>
+                                </div>
+                                <span class="total-span"></span>
+                                <div class="text-center pt-2">
+                                    <i class="fa-solid fa-cart-shopping"></i> or use other checkout methods
+                                    <div class="methood">
+                                        <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+                                        <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+                                        <a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a>
+                                        <a href="#"><i class="fa-brands fa-google-pay"></i></a>
+                                        <a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="pt-4">
+                    <a class="text-white fs-1 text-decoration-none" href="cart.html">e<span class="">Biz</span><span
+                            class="text-danger">Mart</span></a>
+                </div>
+                <div class="d-flex footer-nav pt-3">
+                    <li><a href="cart.html">Home</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iphone</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end text-white">
+                <div class="payment">
+                    <a href="#">
+                        <i class="fa-brands fa-cc-apple-pay"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-google-pay"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-cc-amazon-pay"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <span class="footer-span"></span>
+        <div class="text-center text-white container">
+            <p>&copy; 2023 eBizMart | Created by <a class="text-decoration-none text-primary fw-bold"
+                    href="https://www.facebook.com/irfanahmed812i">Irfan Ahmed</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- script -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://kit.fontawesome.com/42ccb29210.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
